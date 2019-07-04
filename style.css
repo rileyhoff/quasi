@@ -2,3 +2,198 @@
 Quasi skateboards redesign
 Author: Riley Hoff
 */
+html{
+    background: url(img/bg.jpg) no-repeat center center fixed; 
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    color: #fae4e6;
+}
+header{
+    margin-top: 30vh;
+}
+h1{
+    text-align: right;
+    margin: 0vh 5vw 0 0;
+    font-weight: 900;
+    font-size: 30vh;
+    letter-spacing: .5vw;
+    color: #fae4e6;
+    animation: glitch 10s  .5s infinite steps(1);
+    -webkit-animation: glitch 10s  .5s infinite steps(1);
+    -moz-animation: glitch 10s  .5s infinite steps(1);
+}
+h2{
+    text-align: right;
+    font-weight: 400;
+    letter-spacing: 1vw;
+    position: relative;
+    top: -10vh;
+    left: -5vw;
+    margin: 0;
+    font-size: 3vh;
+    animation: glitch 10s  .5s infinite steps(1);
+    -webkit-animation: glitch 10s  .5s infinite steps(1);
+    -moz-animation: glitch 10s  .5s infinite steps(1);
+}
+nav{
+    position: fixed;
+    top: 10vh;
+    left: 20vh;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li {
+    text-align: center;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    border: #fae4e6 solid 1px;
+    margin-bottom: 10vh;
+}
+nav li:hover{
+    background-color: #fae4e6;
+    color: black;
+    animation: glitchBtn .2s  0s forwards steps(1);
+    -webkit-animation: glitchBtn .2s  0s forwards steps(1);
+    -moz-animation: glitchBtn .2s  0s forwards steps(1);
+}
+
+/* animation */
+
+@keyframes glitch{
+    0%{
+        color: cornflowerblue;
+        transform: translateX(2px);
+        transform: skewX(20deg);
+    }.5%{
+        color: darkorchid;
+        transform: translateX(-4px);
+    }1%{
+        color: green;
+        transform: translateX(-5px);
+        transform: skewX(20deg);
+    }1.5%{
+        color: darkred;
+        transform: translateX(6px);
+    }2%{    
+        color: #fae4e6;
+        transform: translateX(1px);
+    }
+}
+
+@-webkit-keyframes glitch{
+    0%{
+        color: cornflowerblue;
+        transform: translateX(2px);
+        transform: skewX(20deg);
+    }.5%{
+        color: darkorchid;
+        transform: translateX(-4px);
+    }1%{
+        color: green;
+        transform: translateX(-5px);
+        transform: skewX(20deg);
+    }1.5%{
+        color: darkred;
+        transform: translateX(6px);
+    }2%{    
+        color: #fae4e6;
+        transform: translateX(1px);
+    }
+}
+
+@-moz-keyframes glitch{
+    0%{
+        color: cornflowerblue;
+        transform: translateX(2px);
+        transform: skewX(20deg);
+    }.5%{
+        color: darkorchid;
+        transform: translateX(-4px);
+    }1%{
+        color: green;
+        transform: translateX(-5px);
+        transform: skewX(20deg);
+    }1.5%{
+        color: darkred;
+        transform: translateX(6px);
+    }2%{    
+        color: #fae4e6;
+        transform: translateX(1px);
+    }
+}
+
+@keyframes glitchBtn {
+        0%{
+            background-color: transparent;
+            color: cornflowerblue;
+            transform: translateX(2px);
+            transform: skewX(20deg);
+        }25%{
+            color: darkorchid;
+            transform: translateX(-4px);
+        }50%{
+            color: green;
+            transform: translateX(-5px);
+            transform: skewX(20deg);
+        }75%{
+            color: darkred;
+            transform: translateX(6px);
+        }100%{   
+            color: #1b2237;   
+            background-color: #fae4e6;
+            transform: translateX(1px);
+        }
+}
+
+@-webkit-keyframes glitchBtn {
+    0%{
+        background-color: transparent;
+        color: cornflowerblue;
+        transform: translateX(2px);
+        transform: skewX(20deg);
+    }25%{
+        color: darkorchid;
+        transform: translateX(-4px);
+    }50%{
+        color: green;
+        transform: translateX(-5px);
+        transform: skewX(20deg);
+    }75%{
+        color: darkred;
+        transform: translateX(6px);
+    }100%{   
+        color: #1b2237;   
+        background-color: #fae4e6;
+        transform: translateX(1px);
+    }
+}
+@-moz-keyframes glitchBtn {
+        0%{
+            background-color: transparent;
+            color: cornflowerblue;
+            transform: translateX(2px);
+            transform: skewX(20deg);
+        }25%{
+            color: darkorchid;
+            transform: translateX(-4px);
+        }50%{
+            color: green;
+            transform: translateX(-5px);
+            transform: skewX(20deg);
+        }75%{
+            color: darkred;
+            transform: translateX(6px);
+        }100%{   
+            color: #1b2237;   
+            background-color: #fae4e6;
+            transform: translateX(1px);
+        }
+}
