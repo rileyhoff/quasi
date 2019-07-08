@@ -1,0 +1,22 @@
+/*
+Quasi skateboards redesign
+Store style
+Author: Riley Hoff
+*/
+body{
+    margin: 0;
+    overflow-x: hidden; 
+}
+main{
+    display: none;
+}
+header{
+    margin: 0;
+}
+h1{
+    font-size: 40pt;
+    letter-spacing: 0;
+    position: static;
+    width: 100vw;
+    text-align: center;
+}

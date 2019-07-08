@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Quasi Skateboards</title>
+    <title>Quasi Store</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Riley Hoff">
     <meta name="description" content="A redesign/case study of Quasi Skateboards eCommerce site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="store_style.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Kanit:400,900&display=swap" rel="stylesheet"> 
     <!-- <link rel="icon" href="images/sqkzIcon.png"> -->
     <script src="script.js"></script>
@@ -15,23 +16,35 @@
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
 <![endif]-->
   </head>
-
   <body>
     <header>
-      <h1 id="title" class = "">Quasi</h1>
-      <h2>Skateboards</h2>
+      <h1 id="title" class = ""><a href="index.html" >Quasi</a></h1>
     </header>
 
     <nav>
       <ul>
-        <a href="store.html#decks"><li>Decks</li></a>
-        <a href="store.html#apperal"><li>Apperal</li></a>
-        <a href="store.html#accessories"><li>Accessories</li></a>
-        <a href="store.html#viewAll"><li>View All</li></a>
+        <li onclick="changeItems('decks')">Decks</li>
+        <li onclick="changeItems('apperal')">Apperal</li>
+        <li onclick="changeItems('accessories')">Accessories</li>
+        <li onclick="changeItems('viewAll')">View All</li>
       </ul>
     </nav>
     
-    <main></main>
-
+    <main id="decks">
+        <p >Decks</p>
+    </main>
+    <main id="apperal">
+            <p >Apperal</p>
+    </main>
+    <main id="accessories">
+            <p >Accessories</p>
+        </main>
+    <main id="viewAll">
+        <p >View All</p>
+    </main>
+    
+    <script>
+    displayItems();
+    </script>
   </body>
 </html>
