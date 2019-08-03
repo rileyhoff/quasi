@@ -3,20 +3,185 @@ Quasi skateboards redesign
 Store style
 Author: Riley Hoff
 */
+html{    
+    background: url(img/bg3.jpg) no-repeat center right fixed;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 body{
     margin: 0;
     overflow-x: hidden; 
 }
 main{
+    margin-top: 100px;
     display: none;
+    padding-left: 10vw;
+    width: 70vw;
 }
 header{
     margin: 0;
+    top: 0;
+    position: fixed;
 }
 h1{
     font-size: 40pt;
     letter-spacing: 0;
-    position: static;
+    position: relative;
     width: 100vw;
     text-align: center;
+    transition: left 0s 0s ease-in-out;
+    color:inherit;
+    animation: warp1 1 .6s linear forwards;
+    -webkit-animation: warp1 1 .6s linear forwards;
+    -moz-animation: warp1 1 .6s linear forwards;
+}
+h1.low{
+    left: 37vw;
+    animation: warp2 1 .6s linear forwards;
+    -webkit-animation: warp2 1 .6s linear forwards;
+    -moz-animation: warp2 1 .6s linear forwards;
+}
+h1.high{
+    left: 0vw;
+}
+h1 a:hover {
+    animation: glitch 1 20s linear forwards;
+    -webkit-animation: glitch 1 20s linear forwards;
+    -moz-animation: glitch 1 20s linear forwards;
+}
+nav{
+    left: 80vw;
+    top: 100px;
+}
+nav ul{
+    padding: 0;
+}
+nav ul li{
+    margin: 0 0 2vh 0;
+    width: 15vw;
+}
+main img{
+    max-width: 22vw;
+    padding: .1vw;
+    float: left;
+    animation: imgLoad .6s  0s  1 forwards linear;
+    -webkit-animation: imgLoad .6s  0s  1 forwards linear;  
+    -moz-animation: imgLoad .6s  0s  1 forwards linear;
+    z-index: -10;
+}
+/*animation*/
+@keyframes imgLoad{
+    0%{
+        opacity: 0;
+        filter: hue-rotate(120deg);
+        -webkit-filter: hue-rotate(120deg);
+        transform: skewX(2deg);
+    }50%{
+        filter: hue-rotate(240deg);
+        -webkit-filter: hue-rotate(240deg);
+        opacity: 1;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+@-webkit-keyframes imgLoad{
+    0%{
+        opacity: 0;
+        filter: hue-rotate(120deg);
+        -webkit-filter: hue-rotate(120deg);
+        transform: skewX(2deg);
+    }50%{
+        filter: hue-rotate(240deg);
+        -webkit-filter: hue-rotate(240deg);
+        opacity: 1;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+@-moz-keyframes imgLoad{
+    0%{
+        opacity: 0;
+        filter: hue-rotate(120deg);
+        -webkit-filter: hue-rotate(120deg);
+        transform: skewX(2deg);
+    }50%{
+        filter: hue-rotate(240deg);
+        -webkit-filter: hue-rotate(240deg);
+        opacity: 1;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+@keyframes warp1 {
+    0%{
+        opacity: 0;
+        transform: skewX(60deg);
+        color: blue;
+    }100%{
+        opacity: 1;
+        transform: skewX(0deg);
+    }
+}
+@-webkit-keyframes warp1 {
+    0%{
+        opacity: 0;
+        transform: skewX(60deg);
+        color: blue;
+    }100%{
+        opacity: 1;
+        transform: skewX(0deg);
+    }
+}
+@-moz-keyframes warp1 {
+    0%{
+        opacity: 0;
+        transform: skewX(60deg);
+        color: blue;
+    }100%{
+        opacity: 1;
+        transform: skewX(0deg);
+    }
+}
+@keyframes warp2 {
+    0%{
+        opacity: 0;
+        transform: skewX(60deg);
+        color: maroon;
+    }100%{
+        opacity: 1;
+        transform: skewX(0deg);
+    }
+}
+@-webkit-keyframes warp2 {
+    0%{
+        opacity: 0;
+        transform: skewX(60deg);
+        color: maroon;
+    }100%{
+        opacity: 1;
+        transform: skewX(0deg);
+    }
+}
+@-moz-keyframes warp2 {
+    0%{
+        opacity: 0;
+        transform: skewX(60deg);
+        color: maroon;
+    }100%{
+        opacity: 1;
+        transform: skewX(0deg);
+    }
+}
+
+@media only screen and (min-width: 800px){
+
 }

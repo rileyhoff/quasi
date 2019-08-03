@@ -11,3 +11,11 @@ function changeItems(id) {
     } 
     document.getElementById(id).style.display = "block";
 }
+
+function moveTitle() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("title").className = 'low';
+    } else {
+        document.getElementById("title").className = 'high';
+    }
+}

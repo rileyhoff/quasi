@@ -12,9 +12,28 @@
     <link href="https://fonts.googleapis.com/css?family=Kanit:400,900&display=swap" rel="stylesheet"> 
     <!-- <link rel="icon" href="images/sqkzIcon.png"> -->
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
 <![endif]-->
+<script>
+type = ["decks","apperal","accessories"];
+type.forEach(element => {
+    var folder = "img/"+element;
+
+  $.ajax({
+      url : folder,
+      success: function (data) {
+          $(data).find("a").attr("href", function (i, val) {
+              if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+                  $("#"+element).append( "<img src='" + val +"'>" );
+                  $("#viewAll").append( "<img src='" + val +"'>" );
+              } 
+          });
+      }
+  });
+});
+</script>
   </head>
   <body>
     <header>
@@ -31,19 +50,18 @@
     </nav>
     
     <main id="decks">
-        <p >Decks</p>
     </main>
     <main id="apperal">
-            <p >Apperal</p>
     </main>
     <main id="accessories">
-            <p >Accessories</p>
-        </main>
+    </main>
     <main id="viewAll">
-        <p >View All</p>
     </main>
     
     <script>
+    window.onscroll = function () {
+      moveTitle();              
+    }; 
     displayItems();
     </script>
   </body>
