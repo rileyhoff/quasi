@@ -9,6 +9,7 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-right: 60px;
 }
 body{
     font-family: 'Kanit', sans-serif;

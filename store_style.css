@@ -16,12 +16,6 @@ body{
     margin: 0;
     overflow-x: hidden; 
 }
-main{
-    margin-top: 100px;
-    display: none;
-    padding-left: 1vw;
-    width: 98vw;
-}
 header{
     margin: 0;
     top: 0;
@@ -60,16 +54,18 @@ nav{
     left: 0;
     bottom: 0;
     top: unset;
+    z-index: 500;
 }
 nav ul{
     padding: 0;
     margin: 0;
     height: 50px;
+    width: 100vw;
 }
 nav ul li{
     height: 50px;
     margin: 0;
-    width: 22vw;
+    width: 21%;
     line-height: 50px;
     background-color: rgba(0,0,0,.5);
     border: none;
@@ -86,10 +82,16 @@ nav ul li.active{
     background: none;
     background-color: rgba(250,228,230,1);
     color: black;
-    width: 34vw;
+    width: 37%;
+}
+main{
+    margin-top: 100px;
+    display: none;
+    padding-left: 4vw;
+    width: 98vw;
 }
 main img{
-    max-width: 48vw;
+    max-width: 45vw;
     padding: .5vw;
     float: left;
     animation: imgLoad .6s  0s  1 forwards linear;
@@ -246,7 +248,7 @@ main img{
         background: none;
         background-color: rgba(0,0,0,.2);
         color: inherit;
-        width: inherit;
+        width: 15vw;
     }
     nav ul li:hover{
         background-color: #fae4e6;

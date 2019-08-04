@@ -26,8 +26,13 @@ type.forEach(element => {
       success: function (data) {
           $(data).find("a").attr("href", function (i, val) {
               if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                  $("#"+element).append( "<img src='" + val +"'>" );
-                  $("#viewAll").append( "<img src='" + val +"'>" );
+                //images on remote server
+                // $("#"+element).append( "<img src='" + folder + "/" + val +"'>" );
+                // $("#viewAll").append( "<img src='" + folder + "/" + val +"'>" );   
+
+                //images on local computer
+                $("#"+element).append( "<img src='" + val +"'>" );
+                $("#viewAll").append( "<img src='"+ val +"'>" );
               } 
           });
       }
